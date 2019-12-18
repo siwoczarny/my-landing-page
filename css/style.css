@@ -3,9 +3,148 @@
 /* font-family: 'Archivo Black', sans-serif;
 font-family: 'Archivo', sans-serif; */
 
-/* Colors: #ffffff, #f28b24, #a1b5d8, #95a3b3, #313b72 */
+/* Colors: #E0E0E0, #f28b24, #a1b5d8, #95a3b3, #313b72 */
 
 html, body {
     margin: 0;
     padding: 0;
+    font-family: 'Archivo', sans-serif;
+    font-size: 16px;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+}
+
+/* Hamburger */
+
+.hamburger {
+    width: 32px;
+    height: 24px;
+    position: absolute;
+    top: 5%;
+    right: 8%;
+    overflow: hidden;
+    transition: .1s;
+}
+
+.hamburger span {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #95a3b3;
+    border-radius: 5px;
+    left: 0;
+    transition: top .2s .2s, bottom .2s .2s, opacity .2s .2s, transform .1s .3s;
+}
+
+.hamburger span:nth-child(1) {
+    top: 0
+}
+
+.hamburger span:nth-child(2) {
+    top: calc(50% - 2px);
+}
+
+.hamburger span:nth-child(3) {
+    bottom: 0;
+}
+
+    /* animacja */
+
+    .hamburger.active span:nth-child(1) {
+        top: calc(50% - 2px);
+        transform: rotate(-45deg);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        bottom: calc(50% - 2px);
+        transform: rotate(45deg);
+    }
+    /* END animacja */
+
+/* END Hamburger */
+
+.title {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    text-transform: uppercase;
+}
+
+.title h1 {
+    margin: 8px 0px;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 2.2rem;
+    color: #313b72;
+}
+
+.title h3 {
+    margin: 0;
+    color: #f28b24;
+    text-align: center;
+}
+
+header img {
+    width: 75vw;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#arrow {
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    color: #95a3b3;
+    border: 5px solid #95a3b3;
+    border-radius: 50%;
+    text-align: center;
+    bottom: 5%;
+    left: 8%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.fa-arrow-up {
+    animation: arrow 1.5s infinite linear;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: #95a3b3;
+    position: relative;
+    margin-top: 100vh;
+}
+
+/* Media */
+
+@media (orientation: portrait) {
+    h3 span::after {
+        content: '\A...';
+        white-space: pre;;
+    }
+}
+
+@keyframes arrow {
+    0% {
+        transform: translateY(80px)
+    }
+    50% {
+        transform: translateY(0px)
+    }
+    100% {
+        transform: translateY(-80px)
+    }
 }
