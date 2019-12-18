@@ -130,6 +130,73 @@ main {
 
 /* Media */
 
+@media (min-width: 480px) {
+}
+
+@media (min-width: 480px) and (orientation: landscape) {
+
+    .title {
+        top: 30%;
+    }
+
+    header img {
+        width: 50%;
+    }
+
+    #arrow {
+        left: 25%;
+    }
+}
+@media (min-width: 576px) {
+    .title {
+        top: 20%;
+    }
+
+    .title h1 {
+        font-size: 3rem;;
+    }
+
+    .title h3 {
+        font-size: 1.5rem;
+    }
+    
+    #arrow {
+        width: 40px;
+        height: 40px;
+        left: 15%;
+    }
+    
+    header img {
+        width: 75%;
+    }
+}
+
+@media (min-width: 576px) and (orientation: landscape) {
+    #arrow {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    header img {
+        width: 50%;
+    }
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 768px) and (orientation: landscape) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 992px) and (orientation: landscape) {}
+
+@media (min-width: 1024px) {}
+
+@media (min-width: 1024px) and (orientation: landscape) {}
+
+@media (min-width: 1280px) {}
+
+@media (min-width: 1280px) and (orientation: landscape) {}
 
 
 /* Keyframes */
