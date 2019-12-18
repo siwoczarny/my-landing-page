@@ -182,19 +182,41 @@ main {
     }
 }
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    .title {
+        top: 15%;
+    }
+}
 
-@media (min-width: 768px) and (orientation: landscape) {}
+@media (min-width: 768px) and (orientation: landscape) {
+    .title {
+        top: 30%;
+    }
+}
 
 @media (min-width: 992px) {}
 
 @media (min-width: 992px) and (orientation: landscape) {}
 
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+    .title h1 {
+        font-size: 4rem;
+    }
+
+    .title h3 {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
 
 @media (min-width: 1024px) and (orientation: landscape) {}
 
-@media (min-width: 1280px) {}
+@media (min-width: 1280px) {
+    header img {
+        width: auto;
+        height: 90%;
+    }
+}
 
 @media (min-width: 1280px) and (orientation: landscape) {}
 
