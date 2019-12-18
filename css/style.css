@@ -28,7 +28,7 @@ header {
     height: 24px;
     position: absolute;
     top: 5%;
-    right: 8%;
+    left: 5%;
     overflow: hidden;
     transition: .1s;
 }
@@ -76,9 +76,10 @@ header {
 
 .title {
     position: absolute;
-    top: 20%;
+    top: 10%;
     left: 5%;
     text-transform: uppercase;
+    z-index: 1;
 }
 
 .title h1 {
@@ -91,11 +92,10 @@ header {
 .title h3 {
     margin: 0;
     color: #f28b24;
-    text-align: center;
 }
 
 header img {
-    width: 75vw;
+    width: 100vw;
     height: auto;
     position: absolute;
     bottom: 0;
@@ -103,15 +103,15 @@ header img {
 }
 
 #arrow {
-    width: 46px;
-    height: 46px;
+    width: 32px;
+    height: 32px;
     position: absolute;
     color: #95a3b3;
     border: 5px solid #95a3b3;
     border-radius: 50%;
     text-align: center;
-    bottom: 5%;
-    left: 8%;
+    bottom: 12%;
+    left: 4%;
     overflow: hidden;
     cursor: pointer;
 }
@@ -130,12 +130,98 @@ main {
 
 /* Media */
 
-@media (orientation: portrait) {
-    h3 span::after {
-        content: '\A...';
-        white-space: pre;;
+@media (min-width: 480px) {
+}
+
+@media (min-width: 480px) and (orientation: landscape) {
+
+    .title {
+        top: 30%;
+    }
+
+    header img {
+        width: 50%;
+    }
+
+    #arrow {
+        left: 25%;
     }
 }
+@media (min-width: 576px) {
+    .title {
+        top: 20%;
+    }
+
+    .title h1 {
+        font-size: 3rem;;
+    }
+
+    .title h3 {
+        font-size: 1.5rem;
+    }
+    
+    #arrow {
+        width: 40px;
+        height: 40px;
+        left: 15%;
+    }
+    
+    header img {
+        width: 75%;
+    }
+}
+
+@media (min-width: 576px) and (orientation: landscape) {
+    #arrow {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    header img {
+        width: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    .title {
+        top: 15%;
+    }
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+    .title {
+        top: 30%;
+    }
+}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 992px) and (orientation: landscape) {}
+
+@media (min-width: 1024px) {
+    .title h1 {
+        font-size: 4rem;
+    }
+
+    .title h3 {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {}
+
+@media (min-width: 1280px) {
+    header img {
+        width: auto;
+        height: 90%;
+    }
+}
+
+@media (min-width: 1280px) and (orientation: landscape) {}
+
+
+/* Keyframes */
 
 @keyframes arrow {
     0% {
