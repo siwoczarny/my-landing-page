@@ -28,7 +28,7 @@ header {
     height: 24px;
     position: absolute;
     top: 5%;
-    right: 8%;
+    left: 5%;
     overflow: hidden;
     transition: .1s;
 }
@@ -76,9 +76,10 @@ header {
 
 .title {
     position: absolute;
-    top: 20%;
+    top: 10%;
     left: 5%;
     text-transform: uppercase;
+    z-index: 1;
 }
 
 .title h1 {
@@ -91,11 +92,10 @@ header {
 .title h3 {
     margin: 0;
     color: #f28b24;
-    text-align: center;
 }
 
 header img {
-    width: 75vw;
+    width: 100vw;
     height: auto;
     position: absolute;
     bottom: 0;
@@ -103,15 +103,15 @@ header img {
 }
 
 #arrow {
-    width: 46px;
-    height: 46px;
+    width: 32px;
+    height: 32px;
     position: absolute;
     color: #95a3b3;
     border: 5px solid #95a3b3;
     border-radius: 50%;
     text-align: center;
-    bottom: 5%;
-    left: 8%;
+    bottom: 12%;
+    left: 4%;
     overflow: hidden;
     cursor: pointer;
 }
@@ -130,12 +130,9 @@ main {
 
 /* Media */
 
-@media (orientation: portrait) {
-    h3 span::after {
-        content: '\A...';
-        white-space: pre;;
-    }
-}
+
+
+/* Keyframes */
 
 @keyframes arrow {
     0% {
