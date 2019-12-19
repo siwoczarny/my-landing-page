@@ -28,7 +28,7 @@ header {
     height: 24px;
     position: absolute;
     top: 5%;
-    left: 5%;
+    right: 5%;
     overflow: hidden;
     transition: .1s;
 }
@@ -110,8 +110,8 @@ header img {
     border: 5px solid #95a3b3;
     border-radius: 50%;
     text-align: center;
-    bottom: 12%;
-    left: 4%;
+    bottom: 20%;
+    right: 4%;
     overflow: hidden;
     cursor: pointer;
 }
@@ -134,6 +134,10 @@ main {
 }
 
 @media (min-width: 480px) and (orientation: landscape) {
+    .hamburger {
+        left: 5%;
+    }
+
 
     .title {
         top: 30%;
@@ -172,6 +176,15 @@ main {
 }
 
 @media (min-width: 576px) and (orientation: landscape) {
+    .title h1 {
+        font-size: 2.5rem;
+        ;
+    }
+
+    .title h3 {
+        font-size: 1.2rem;
+    }
+
     #arrow {
         left: 50%;
         transform: translateX(-50%);
