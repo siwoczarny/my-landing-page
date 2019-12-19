@@ -10,6 +10,6 @@ $(".hamburger").on("click", function(e) {
 
 $("#arrow").on("click", function () {
     $("body, html").animate({
-        scrollTop: $("main").offset().top
+        scrollTop: $(".about").offset().top
     }, 1200)
 })
