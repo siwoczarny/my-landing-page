@@ -124,6 +124,10 @@ header img {
     animation: arrow 1.5s infinite linear;
 }
 
+/* MAIN */
+
+/* About */
+
 .about {
     width: 100%;
     height: 100vh;
@@ -151,8 +155,54 @@ header img {
     height: auto;
     position: absolute;
     border-radius: 50%;
+    padding: 10px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.fa-angle-down {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateY(-50%);
+}
+
+/* Technology */
+
+.technology {
+    width: 100vw;
+    height: auto;
+    position: absolute;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.lang {
+    padding: 50px 25px 0 25px;
+}
+
+.fa-html5 {
+    color: #F16529;
+}
+
+.fa-css3 {
+    color:#2965f1;
+}
+
+.fa-bootstrap {
+    color: #602C50;
+
+}
+
+.fa-js {
+    color: #F0DB4F;
+
+}
+
+.fa-react {
+    color: #61DBFB;
 }
 
 /* Media */
@@ -300,3 +350,4 @@ header img {
         transform: translateY(-80px)
     }
 }
+
