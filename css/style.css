@@ -25,7 +25,8 @@ header {
     width: 100%;
     height: 50px;
     position: absolute;
-    clip-path: polygon(0 0,0 100%, 100% 0);
+    -webkit-clip-path: polygon(0 0,0 100%, 100% 0);
+            clip-path: polygon(0 0,0 100%, 100% 0);
     background: #95a3b3;
 }
 
@@ -35,7 +36,8 @@ nav {
     top: 0;
     position: fixed;
     z-index: 2;
-    transition: all .2s;
+    -webkit-transition: all .1s;
+    transition: all .1s;
 }
 
 /* Hamburger */
@@ -51,6 +53,7 @@ nav {
     border-color: transparent;
     border-radius: 5px;
     background-color: transparent;
+    -webkit-transition: .1s;
     transition: .1s;
 }
 
@@ -61,7 +64,10 @@ nav {
     background-color: #95a3b3;
     border-radius: 5px;
     left: 0;
+    -webkit-transition: top .2s .2s, bottom .2s .2s, opacity .2s .2s, -webkit-transform .1s .3s;
+    transition: top .2s .2s, bottom .2s .2s, opacity .2s .2s, -webkit-transform .1s .3s;
     transition: top .2s .2s, bottom .2s .2s, opacity .2s .2s, transform .1s .3s;
+    transition: top .2s .2s, bottom .2s .2s, opacity .2s .2s, transform .1s .3s, -webkit-transform .1s .3s;
 }
 
 .hamburger span:nth-child(1) {
@@ -80,7 +86,8 @@ nav {
 
     .hamburger.active span:nth-child(1) {
         top: calc(50% - 2px);
-        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
     }
 
     .hamburger.active span:nth-child(2) {
@@ -89,7 +96,8 @@ nav {
 
     .hamburger.active span:nth-child(3) {
         bottom: calc(50% - 2px);
-        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
     }
     /* END animacja */
 
@@ -128,13 +136,15 @@ nav {
     text-align: center;
     bottom: 10%;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     overflow: hidden;
     cursor: pointer;
 }
 
 .fa-arrow-up {
-    animation: arrow 1.5s infinite linear;
+    -webkit-animation: arrow 1.5s infinite linear;
+            animation: arrow 1.5s infinite linear;
 }
 
 
@@ -146,7 +156,8 @@ nav {
     height: 50px;
     bottom: 0;
     position: absolute;
-    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+    -webkit-clip-path: polygon(100% 0, 0 100%, 100% 100%);
+            clip-path: polygon(100% 0, 0 100%, 100% 100%);
     background: #95a3b3;
 }
 
@@ -241,7 +252,8 @@ nav {
 
 .project {
     border: 1px solid lightgray;
-    box-shadow: 0px 4px 12px whitesmoke;
+    -webkit-box-shadow: 0px 4px 12px whitesmoke;
+            box-shadow: 0px 4px 12px whitesmoke;
 }
 
 /* Media */
@@ -277,15 +289,33 @@ nav {
 
 /* Keyframes */
 
-@keyframes arrow {
+@-webkit-keyframes arrow {
     0% {
-        transform: translateY(80px)
+        -webkit-transform: translateY(80px);
+                transform: translateY(80px)
     }
     50% {
-        transform: translateY(0px)
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px)
     }
     100% {
-        transform: translateY(-80px)
+        -webkit-transform: translateY(-80px);
+                transform: translateY(-80px)
+    }
+}
+
+@keyframes arrow {
+    0% {
+        -webkit-transform: translateY(80px);
+                transform: translateY(80px)
+    }
+    50% {
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px)
+    }
+    100% {
+        -webkit-transform: translateY(-80px);
+                transform: translateY(-80px)
     }
 }
 

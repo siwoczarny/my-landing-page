@@ -19,20 +19,16 @@ $("#arrow").on("click", function () {
 // Zmiana tła navbaru po scrollu
 
 $(document).scroll(function() {
+    var nav = $('nav').height();
     var y = $(this).scrollTop();
-    var topSize = $('.header-top').height() * 1.25;
-    var h = $('header').height() - topSize;
-    var hdouble = $('header').height() * 1.75;
-    
+    var h = $('header').height() - nav;
+    // dorobić kod który po scrollu headera doda background do nav i zmieni kolor hamurgera
     if (y > h) {
-        $(".hamburger span").css("background-color", "#ffffff");
-    } else {
-        $(".hamburger span").css("background-color", "#95a3b3");
-    };
-
-    if (y > hdouble) {
+        $(".hamburger span").css("background-color", "#ffffff"),
         $("nav").css("background-color", "#95a3b3");
     } else {
+        $(".hamburger span").css("background-color", "#95a3b3"),
         $("nav").css("background-color", "initial");
-    }
+    };
+
 })
