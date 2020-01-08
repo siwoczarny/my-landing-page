@@ -1,20 +1,28 @@
+// Zmiana jednostek viewport na mobile
+
+$(window).on("load", function () {
+    var vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
+
 // Animacja hamburgera
 
 $(".hamburger").on("click", function(e) {
     $(".hamburger").toggleClass("active");
     e.preventDefault();
-})
+});
 
 
 // Przesunięcie po kliknięciu strzałki
 
 var main = $(".main-top");
 
-$("#arrow").on("click", function () {
+$("#arrow").on("click", function (e) {
     $("body, html").animate({
         scrollTop: main.offset().top
     }, 1200)
-})
+    e.preventDefault();
+});
 
 // Zmiana tła navbaru po scrollu
 
@@ -31,4 +39,4 @@ $(document).scroll(function() {
         $("nav").css("background-color", "initial");
     };
 
-})
+});
