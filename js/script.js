@@ -31,7 +31,7 @@ $(document).scroll(function() {
     var y = $(this).scrollTop();
     var h = $('header').height() - nav;
     // dorobić kod który po scrollu headera doda background do nav i zmieni kolor hamurgera
-    if (y > h) {
+    if (y >= h) {
         $(".hamburger span").css("background-color", "#ffffff"),
         $("nav").css("background-color", "#95a3b3");
     } else {

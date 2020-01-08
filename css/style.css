@@ -52,10 +52,15 @@ nav {
     position: absolute;
     top: 16px;
     right: 16px;
+    border: 3px solid transparent;
     overflow: hidden;
     background-color: transparent;
-    -webkit-transition: .1s;
-    transition: .1s;
+    -webkit-transition: ease-in-out .3s;
+    transition: ease-in-out .3s;
+}
+
+.hamburger.active {
+    transform: rotate(180deg);
 }
 
 .hamburger span {
@@ -64,10 +69,10 @@ nav {
     height: 3px;
     background-color: #95a3b3;
     left: 0;
-    -webkit-transition: top .2s, bottom .2s, opacity .2s, -webkit-transform .3s;
-    transition: top .2s, bottom .2s, opacity .2s, -webkit-transform .3s;
-    transition: top .2s, bottom .2s, opacity .2s, transform .3s;
-    transition: top .2s, bottom .2s, opacity .2s, transform .3s, -webkit-transform .3s;
+    -webkit-transition: top .2s, bottom .2s, opacity .2s, -webkit-transform .2s;
+    transition: top .2s, bottom .2s, opacity .2s, -webkit-transform .2s;
+    transition: top .2s, bottom .2s, opacity .2s, transform .2s;
+    transition: top .2s, bottom .2s, opacity .2s, transform .2s, -webkit-transform .2s;
 }
 
 .hamburger span:nth-child(1) {
@@ -85,7 +90,7 @@ nav {
     /* animacja */
 
     .hamburger.active span:nth-child(1) {
-        top: calc(50% - 2px);
+        top: calc(50% - 1.5px);
         -webkit-transform: rotate(-45deg);
                 transform: rotate(-45deg);
     }
@@ -95,7 +100,7 @@ nav {
     }
 
     .hamburger.active span:nth-child(3) {
-        bottom: calc(50% - 2px);
+        bottom: calc(50% - 1.5px);
         -webkit-transform: rotate(45deg);
                 transform: rotate(45deg);
     }
