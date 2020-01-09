@@ -14,6 +14,7 @@ html, body {
     padding: 0;
     font-family: 'Archivo', sans-serif;
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 header {
@@ -146,9 +147,10 @@ nav {
 
 .title {
     position: absolute;
-    top: 20%;
-    left: 5%;
+    top: 25%;
+    left: 50%;
     text-transform: uppercase;
+    transform: translateX(-50%);
 }
 
 .title h1 {
@@ -184,8 +186,8 @@ nav {
 }
 
 .fa-chevron-up {
-    -webkit-animation: arrow 1.5s infinite linear;
-            animation: arrow 1.5s infinite linear;
+    -webkit-animation: arrow-move 1.5s infinite linear;
+            animation: arrow-move 1.5s infinite linear;
 }
 
 
@@ -208,23 +210,24 @@ nav {
 
 .about {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #95a3b3;
     position: relative;
     text-align: center;
     margin-top: calc(var(--vh, 1vh) * 100);
-    /* margin-top: 90vh; */
+    /* margin-top: 100vh; */
     z-index: 1;
 }
 
 .text-about {
     color: #313b72;
-    padding: 25px 25px 0 25px;
+    padding: 0 24px;
     line-height: 1.5em;
 }
 
 .text-about h2 {
     text-align: initial;
+    margin: 0;
 }
 
 .text-about p {
@@ -240,13 +243,14 @@ nav {
     height: auto;
     position: relative;
     border-radius: 50%;
+    padding-top: 16px;
 }
 
 .fa-angle-down {
     width: 32px;
     height: 32px;
     position: relative;
-    color: #38d4e5;
+    color: #313b72;
 }
 
 /* Technology */
@@ -254,13 +258,33 @@ nav {
 .technology {
     width: 100vw;
     height: auto;
+    padding: 64px 0;
     position: relative;
     background-color: #ffffff;
     text-align: center;
 }
 
-.lang {
-    padding: 50px 25px 0 25px;
+.technology h2 {
+    margin: 0;
+    padding: 16px;
+    text-transform: uppercase;
+}
+
+.technology h4 {
+    padding: 0 32px;
+}
+
+.skills {
+    padding: 0 24px;
+}
+
+.type {
+    display: inline-block;
+    padding: 16px;
+}
+
+.type p {
+    margin: 8px 0 0 0;
 }
 
 .fa-html5 {
@@ -273,16 +297,18 @@ nav {
 
 .fa-bootstrap {
     color: #602C50;
-
 }
 
 .fa-js {
     color: #F0DB4F;
-
 }
 
 .fa-react {
     color: #61DBFB;
+}
+
+.fa-node {
+    color: #303030;
 }
 
 /* My works */
@@ -290,14 +316,55 @@ nav {
 .my-works {
     width: 100%;
     height: auto;
+    text-align: center;
+    padding-bottom: 64px;
     background-color: #95a3b3;
     position: relative;
+    background-color: #ffffff;
+}
+
+.my-works h2 {
+    margin: 0;
+    padding: 16px;
+    text-transform: uppercase;
+}
+
+.all-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .project {
-    border: 1px solid lightgray;
-    -webkit-box-shadow: 0px 4px 12px whitesmoke;
-            box-shadow: 0px 4px 12px whitesmoke;
+    margin: 16px;
+    cursor: pointer;
+}
+
+.project img {
+    width: 80%;
+}
+
+.project p {
+    margin: 0;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    background-color: #95a3b3;
+    bottom: 0;
+    padding: 32px 0;;
+}
+
+.contact i {
+    color: #ffffff;
+}
+
+footer h4 {
+    color: #ffffff;
 }
 
 /* Media */
@@ -333,7 +400,7 @@ nav {
 
 /* Keyframes */
 
-@-webkit-keyframes arrow {
+@-webkit-keyframes arrow-move {
     0% {
         -webkit-transform: translateY(80px);
                 transform: translateY(80px)
@@ -348,7 +415,7 @@ nav {
     }
 }
 
-@keyframes arrow {
+@keyframes arrow-move {
     0% {
         -webkit-transform: translateY(80px);
                 transform: translateY(80px)
