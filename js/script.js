@@ -8,9 +8,14 @@ $(window).on("load", function () {
 // Animacja hamburgera
 
 $(".hamburger").on("click", function(e) {
+    $(".nav-menu").toggleClass("active"),
     $(".hamburger").toggleClass("active");
     e.preventDefault();
 });
+
+$(".nav-menu a").on("click", function() {
+   $(".nav-menu").toggleClass('active').siblings().removeClass('active');
+})
 
 
 // Przesunięcie po kliknięciu strzałki

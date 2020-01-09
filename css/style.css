@@ -22,7 +22,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .header-top {
@@ -107,6 +107,42 @@ nav {
     /* END animacja */
 
 /* END Hamburger */
+
+/* Menu */
+
+.nav-menu {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    background-color: #95a3b3;
+    visibility: hidden;
+    top: -100%;
+    transition: 1s;
+}
+
+.nav-menu.active {
+    visibility: visible;
+    top: 62px;
+}
+
+.nav-menu ul {
+    list-style: none;
+}
+
+.nav-menu a {
+    color: #313b72;
+    line-height: 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.nav-menu a:hover {
+    color: #ffffff;
+}
+
+/* END Menu */
+
 
 .title {
     position: absolute;
