@@ -8,9 +8,14 @@ $(window).on("load", function () {
 // Animacja hamburgera
 
 $(".hamburger").on("click", function(e) {
+    $(".nav-menu").toggleClass("active"),
     $(".hamburger").toggleClass("active");
     e.preventDefault();
 });
+
+$(".nav-menu a").on("click", function() {
+   $(".nav-menu").toggleClass('active').siblings().removeClass('active');
+})
 
 
 // Przesunięcie po kliknięciu strzałki
@@ -31,7 +36,7 @@ $(document).scroll(function() {
     var y = $(this).scrollTop();
     var h = $('header').height() - nav;
     // dorobić kod który po scrollu headera doda background do nav i zmieni kolor hamurgera
-    if (y > h) {
+    if (y >= h) {
         $(".hamburger span").css("background-color", "#ffffff"),
         $("nav").css("background-color", "#95a3b3");
     } else {
