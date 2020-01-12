@@ -114,21 +114,33 @@ nav {
 
 .nav-menu {
     position: fixed;
-    width: 100%;
+    width: 90%;
     text-align: center;
     background-color: #95a3b3;
     visibility: hidden;
     top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
     transition: 1s;
 }
 
 .nav-menu.active {
     visibility: visible;
-    top: 62px;
+    top: 80px;
 }
 
 .nav-menu ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    border-bottom: 1px solid #ffffff;
+}
+
+.nav-menu li:first-child {
+    border-top: 1px solid #ffffff;
 }
 
 .nav-menu a {
@@ -150,6 +162,7 @@ nav {
     position: absolute;
     top: 25%;
     left: 50%;
+    text-align: center;
     text-transform: uppercase;
     transform: translateX(-50%);
 }
@@ -166,8 +179,14 @@ nav {
     color: #f28b24;
 }
 
+.title h4 {
+    margin: 0;
+    color: #f28b24;
+}
+
 .title i {
     color: #38d4e5;
+    padding: 8px;
 }
 
 #arrow {
@@ -221,7 +240,7 @@ nav {
 }
 
 .text-about {
-    color: #313b72;
+    color: #ffffff;
     padding: 0 24px;
     line-height: 1.5em;
 }
@@ -236,7 +255,7 @@ nav {
 }
 
 .text-about p span {
-    color: #38d4e5;
+    color: #313b72;
 }
 
 .about img {
@@ -244,14 +263,14 @@ nav {
     height: auto;
     position: relative;
     border-radius: 50%;
-    padding-top: 16px;
+    margin: 16px 0;
 }
 
-.fa-angle-down {
+.fa-chevron-down {
     width: 32px;
     height: 32px;
     position: relative;
-    color: #313b72;
+    color: #ffffff;
 }
 
 /* Technology */
@@ -269,10 +288,13 @@ nav {
     margin: 0;
     padding: 16px;
     text-transform: uppercase;
+    color: #f28b24;
 }
 
 .technology h4 {
-    padding: 0 32px;
+    padding: 0 40px;
+    color: #313b72;
+    font-weight: normal;
 }
 
 .skills {
@@ -312,14 +334,19 @@ nav {
     color: #303030;
 }
 
+hr {
+    width: 75%;
+    color: #95a3b3;
+    margin-top: 64px;
+}
+
 /* My works */
 
 .my-works {
     width: 100%;
     height: auto;
     text-align: center;
-    padding-bottom: 64px;
-    background-color: #95a3b3;
+    padding: 32px 0;
     position: relative;
     background-color: #ffffff;
 }
@@ -328,6 +355,12 @@ nav {
     margin: 0;
     padding: 16px;
     text-transform: uppercase;
+    color: #f28b24;
+}
+
+.my-works p {
+    padding-top: 8px;
+    color: #313b72
 }
 
 .all-projects {
@@ -337,7 +370,7 @@ nav {
 }
 
 .project {
-    margin: 16px;
+    margin: 24px;
     cursor: pointer;
 }
 
@@ -349,6 +382,38 @@ nav {
     margin: 0;
 }
 
+/* CV */
+
+.cv {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;   
+    background-color: #ffffff;
+    padding: 32px 0 64px 0;
+}
+
+.cv img {
+    width: 50%;
+    margin-bottom: 32px;
+    border: 1px solid #95a3b3;
+}
+
+.downloadCV {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #ffffff;
+    background-color: #95a3b3;
+    padding: 8px;
+    transition: .2s;
+}
+
+.downloadCV:hover {
+    color: #313b72;
+}
+
 /* Footer */
 
 footer {
@@ -357,14 +422,16 @@ footer {
     text-align: center;
     background-color: #95a3b3;
     bottom: 0;
-    padding: 32px 0;;
+    padding: 24px 0;;
 }
 
 .contact i {
     color: #ffffff;
+    padding: 0 8px;
 }
 
 footer h4 {
+    padding: 0 8px;
     color: #ffffff;
 }
 

@@ -17,6 +17,22 @@ $(".nav-menu a").on("click", function() {
    $(".nav-menu").toggleClass('active').siblings().removeClass('active');
 })
 
+//Scroll po kliknięciu w link menu
+
+function scroll(e) {
+    var href  = $(this).attr('href');
+
+    e.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $(href).offset().top
+    }, 800);
+
+    location.hash = href;
+};
+
+$('a[href^="#"]').click(scroll);
+
 
 // Przesunięcie po kliknięciu strzałki
 
