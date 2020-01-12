@@ -276,9 +276,9 @@ nav {
 /* Technology */
 
 .technology {
-    width: 100vw;
+    width: 100%;
     height: auto;
-    padding: 64px 0;
+    padding: 64px 0 16px 0;
     position: relative;
     background-color: #ffffff;
     text-align: center;
@@ -337,7 +337,7 @@ nav {
 hr {
     width: 75%;
     color: #95a3b3;
-    margin-top: 64px;
+    margin-top: 62px;
 }
 
 /* My works */
@@ -346,7 +346,7 @@ hr {
     width: 100%;
     height: auto;
     text-align: center;
-    padding: 32px 0;
+    padding: 64px 0 16px 0;
     position: relative;
     background-color: #ffffff;
 }
@@ -356,11 +356,6 @@ hr {
     padding: 16px;
     text-transform: uppercase;
     color: #f28b24;
-}
-
-.my-works p {
-    padding-top: 8px;
-    color: #313b72
 }
 
 .all-projects {
@@ -387,16 +382,25 @@ hr {
 .cv {
     position: relative;
     display: flex;
+    width: 100%;
+    height: 100vh;
     flex-direction: column;
     align-items: center;
     text-align: center;   
     background-color: #ffffff;
-    padding: 32px 0 64px 0;
+    padding: 64px 0 64px 0;
+}
+
+.cv h2 {
+    margin: 0;
+    padding: 16px;
+    text-transform: uppercase;
+    color: #f28b24;
 }
 
 .cv img {
-    width: 50%;
-    margin-bottom: 32px;
+    width: 70%;
+    margin: 32px 0;
     border: 1px solid #95a3b3;
 }
 
@@ -414,6 +418,16 @@ hr {
     color: #313b72;
 }
 
+/* Image */
+
+.bottom-img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: 0;
+    background-color: #ffffff;
+}
+
 /* Footer */
 
 footer {
@@ -422,12 +436,12 @@ footer {
     text-align: center;
     background-color: #95a3b3;
     bottom: 0;
-    padding: 24px 0;;
+    padding-bottom: 24px;
 }
 
 .contact i {
     color: #ffffff;
-    padding: 0 8px;
+    padding: 24px 8px 0 8px;
 }
 
 footer h4 {
