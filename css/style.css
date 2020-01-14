@@ -119,8 +119,8 @@ nav {
     background-color: #95a3b3;
     visibility: hidden;
     top: -100%;
-    left: 50%;
-    transform: translateX(-50%);
+    right: 50%;
+    transform: translateX(50%);
     transition: 1s;
 }
 
@@ -148,7 +148,7 @@ nav {
     line-height: 2em;
     text-transform: uppercase;
     text-decoration: none;
-    transition: .2s;
+    transition: all .2s;
 }
 
 .nav-menu a:hover {
@@ -465,7 +465,54 @@ footer h4 {
 
 @media (min-width: 768px) {}
 
-@media (min-width: 768px) and (orientation: landscape) {}
+@media (min-width: 768px) and (orientation: landscape) {
+
+    .header-top,
+    .main-top {
+        display: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .nav-menu {
+        position: fixed;
+        text-align: right;
+        background: transparent;
+        visibility: visible;
+        top: 16px;
+        right: 15px;
+        transform: none;
+    }
+
+    .nav-menu.active {
+        visibility: visible;
+        top: 16px;
+    }
+
+    .nav-menu ul {
+        display: block;
+    }
+
+    .nav-menu li {
+        display: inline;
+        border: 1px solid #95a3b3;
+        background-color: #ffffff;
+        padding: 8px;
+        border-radius: 8px;
+        margin: 0 8px 0 8px;
+    }
+
+    .nav-menu li:first-child {
+        border-top: 1px solid #95a3b3;
+    }
+
+    .nav-menu a:hover {
+        text-decoration: underline;
+        color: #313b72
+    }
+}
 
 @media (min-width: 992px) {}
 
