@@ -53,9 +53,11 @@ $(document).scroll(function() {
     var h = $('header').height() - nav;
     // dorobić kod który po scrollu headera doda background do nav i zmieni kolor hamurgera
     if (y >= h) {
+        $("#header").css("visibility", "hidden"),
         $(".hamburger span").css("background-color", "#ffffff"),
         $("nav").css("background-color", "#95a3b3");
     } else {
+        $("#header").css("visibility", "visible"),
         $(".hamburger span").css("background-color", "#95a3b3"),
         $("nav").css("background-color", "initial");
     };

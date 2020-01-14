@@ -164,6 +164,7 @@ nav {
     left: 50%;
     text-align: center;
     text-transform: uppercase;
+    z-index: 1;
     transform: translateX(-50%);
 }
 
@@ -199,8 +200,7 @@ nav {
     text-align: center;
     bottom: 10%;
     left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
     overflow: hidden;
     cursor: pointer;
 }
@@ -210,7 +210,9 @@ nav {
             animation: arrow-move 1.5s infinite linear;
 }
 
-
+.header-img {
+    display: none;
+}
 
 /* MAIN */
 
@@ -264,6 +266,10 @@ nav {
     position: relative;
     border-radius: 50%;
     margin: 16px 0;
+}
+
+.chevron-text {
+    display: none;
 }
 
 .fa-chevron-down {
@@ -467,9 +473,14 @@ footer h4 {
 
 @media (min-width: 768px) and (orientation: landscape) {
 
+    header {
+        background: none;
+
+    }
+
     .header-top,
     .main-top {
-        display: none;
+        visibility: hidden;
     }
 
     .hamburger {
@@ -511,6 +522,58 @@ footer h4 {
     .nav-menu a:hover {
         text-decoration: underline;
         color: #313b72
+    }
+
+    .title {
+        left: 25%;
+        text-align: left;
+    }
+
+    #arrow {
+        left: 25%;
+    }
+
+    .header-img {
+        display: inherit;
+        width: auto;
+        height: calc(var(--vh, 1vh) * 90);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .text-about {
+        text-align: left;
+        width: 40%;
+        padding: 0 64px;
+    }
+
+    .about img {
+        width: 70%;
+        margin: 40px 0;
+    }
+
+    .about-img {
+        width: 40%;
+    }
+
+    .text-about,
+    .about-img {
+        float: left;
+    }
+
+    .chevron-text {
+        display: inherit;
+        text-align: center;
+    }
+
+    .chevron {
+        display: none;
+    }
+
+    
+    .bottom-img {
+        display: none;
     }
 }
 
