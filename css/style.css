@@ -426,11 +426,12 @@ hr {
 
 /* Image */
 
+
 .bottom-img {
     width: 100%;
     height: auto;
-    position: relative;
     margin: 0;
+    padding: 0;
     background-color: #ffffff;
 }
 
@@ -445,12 +446,17 @@ footer {
     padding-bottom: 24px;
 }
 
+.contact {
+    padding-bottom: 16px;
+}
+
 .contact i {
     color: #ffffff;
     padding: 24px 8px 0 8px;
 }
 
 footer h4 {
+    margin: 0;
     padding: 0 8px;
     color: #ffffff;
 }
@@ -469,9 +475,7 @@ footer h4 {
 
 @media (min-width: 576px) and (orientation: landscape) {}
 
-@media (min-width: 768px) {}
-
-@media (min-width: 768px) and (orientation: landscape) {
+@media (min-width: 768px) and (orientation: portrait) {
 
     header {
         background: none;
@@ -525,8 +529,8 @@ footer h4 {
     }
 
     .title {
-        left: 25%;
-        text-align: left;
+        top: 15%;
+        text-align: center;
     }
 
     #arrow {
@@ -536,7 +540,7 @@ footer h4 {
     .header-img {
         display: inherit;
         width: auto;
-        height: calc(var(--vh, 1vh) * 90);
+        height: calc(var(--vh, 1vh) * 75);
         position: absolute;
         bottom: 0;
         right: 0;
@@ -553,12 +557,12 @@ footer h4 {
         margin: 40px 0;
     }
 
-    .about-img {
+    .about-picture {
         width: 40%;
     }
 
     .text-about,
-    .about-img {
+    .about-picture {
         float: left;
     }
 
@@ -577,15 +581,188 @@ footer h4 {
     }
 }
 
+@media (min-width: 768px) and (orientation: landscape) {}
+
 @media (min-width: 992px) {}
 
 @media (min-width: 992px) and (orientation: landscape) {}
 
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+    header {
+        background: none;
 
-@media (min-width: 1024px) and (orientation: landscape) {}
+    }
 
-@media (min-width: 1280px) {}
+    .header-top,
+    .main-top {
+        visibility: hidden;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .nav-menu {
+        position: fixed;
+        text-align: right;
+        background: transparent;
+        visibility: visible;
+        top: 16px;
+        right: 15px;
+        transform: none;
+    }
+
+    .nav-menu.active {
+        visibility: visible;
+        top: 16px;
+    }
+
+    .nav-menu ul {
+        display: block;
+    }
+
+    .nav-menu li {
+        display: inline;
+        border: 1px solid #95a3b3;
+        background-color: #ffffff;
+        padding: 8px;
+        border-radius: 8px;
+        margin: 0 8px 0 8px;
+    }
+
+    .nav-menu li:first-child {
+        border-top: 1px solid #95a3b3;
+    }
+
+    .nav-menu a:hover {
+        text-decoration: underline;
+        color: #313b72
+    }
+
+    .title {
+        top: 25%;
+        left: 25%;
+        text-align: center;
+    }
+
+    .title h1 {
+        font-size: 3rem;
+    }
+
+    .title h4 {
+        font-size: 1.2rem;
+    }
+
+    #arrow {
+        left: 25%;
+    }
+
+    .header-img {
+        display: inherit;
+        width: auto;
+        height: calc(var(--vh, 1vh) * 90);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .about {
+        padding-top: 64px;
+    }
+
+    .text-about {
+        text-align: left;
+        width: 45%;
+        padding: 0 32px 0 80px;
+    }
+
+    .about img {
+        width: 40%;
+        margin: 40px 0;
+    }
+
+    .about-picture {
+        width: 40%;
+    }
+
+    .text-about,
+    .about-picture {
+        float: left;
+    }
+
+    .chevron-text {
+        display: inherit;
+        text-align: center;
+    }
+
+    .chevron {
+        display: none;
+    }
+
+    .technology h2 {
+        font-size: 2rem;
+    }
+
+    .technology h4 {
+        font-size: 1.2rem;
+    }
+
+    .skills {
+        padding: 32px 0 64px 0;
+    }
+
+    .type {
+        font-size: 1.5rem;
+        padding: 32px;
+    }
+
+    .my-works h2 {
+        font-size: 2rem;
+    }
+
+    .my-works h4 {
+        font-size: 1.2rem;
+    }
+
+    .project p {
+        font-size: 1.2rem;
+    }
+
+    .bottom-img {
+        display: none;
+    }
+
+    .cv img {
+        width: 40%;
+    }
+
+    footer {
+        padding-bottom: 16px;
+    }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+}
+
+@media (min-width: 1920px) {
+    body {
+        font-size: 24px;
+    }
+
+    .title h1 {
+        font-size: 4rem;
+    }
+
+    .title h4 {
+        font-size: 1.5rem;
+    }
+
+    .cv img {
+        width: 60%;
+    }
+
+
+}
 
 @media (min-width: 1280px) and (orientation: landscape) {}
 
