@@ -371,16 +371,18 @@ hr {
 }
 
 .project {
-    margin: 24px;
+    padding: 24px;
     cursor: pointer;
 }
 
 .project img {
     width: 80%;
+    object-fit: cover;
 }
 
 .project p {
     margin: 0;
+    padding-top: 16px;
 }
 
 /* CV */
@@ -477,6 +479,8 @@ footer h4 {
 
 @media (min-width: 768px) and (orientation: portrait) {
 
+    /* Header */
+
     header {
         background: none;
 
@@ -497,8 +501,6 @@ footer h4 {
         background: transparent;
         visibility: visible;
         top: 16px;
-        right: 15px;
-        transform: none;
     }
 
     .nav-menu.active {
@@ -540,7 +542,7 @@ footer h4 {
     .header-img {
         display: inherit;
         width: auto;
-        height: calc(var(--vh, 1vh) * 75);
+        height: calc(var(--vh, 1vh) * 60);
         position: absolute;
         bottom: 0;
         right: 0;
@@ -551,6 +553,8 @@ footer h4 {
         width: 40%;
         padding: 0 64px;
     }
+
+    /* About */
 
     .about img {
         width: 70%;
@@ -575,7 +579,14 @@ footer h4 {
         display: none;
     }
 
+    /* My works */
     
+    .project p {
+        font-size: 1.2rem;
+    }
+
+    /* Image */
+
     .bottom-img {
         display: none;
     }
@@ -588,6 +599,9 @@ footer h4 {
 @media (min-width: 992px) and (orientation: landscape) {}
 
 @media (min-width: 1024px) {
+
+    /* Header */
+
     header {
         background: none;
 
@@ -608,7 +622,7 @@ footer h4 {
         background: transparent;
         visibility: visible;
         top: 16px;
-        right: 15px;
+        right: 80px;
         transform: none;
     }
 
@@ -641,8 +655,11 @@ footer h4 {
 
     .title {
         top: 25%;
-        left: 25%;
+        left: 80px;
+        width: 400px;
         text-align: center;
+        transform: none;
+
     }
 
     .title h1 {
@@ -665,6 +682,8 @@ footer h4 {
         bottom: 0;
         right: 0;
     }
+
+    /* About */
 
     .about {
         padding-top: 64px;
@@ -699,6 +718,8 @@ footer h4 {
         display: none;
     }
 
+    /* Technology */
+
     .technology h2 {
         font-size: 2rem;
     }
@@ -724,29 +745,56 @@ footer h4 {
         font-size: 1.2rem;
     }
 
+    /* My works */
+
+    .all-projects {
+        display: flex;
+        flex-direction: initial;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-top: 32px;
+    }
+
+    .project {
+        width: 40%;
+    }
+
     .project p {
         font-size: 1.2rem;
     }
+
+    /* CV */
+
+    .cv img {
+        width: 40%;
+    }
+
+    /* Image */
 
     .bottom-img {
         display: none;
     }
 
-    .cv img {
-        width: 40%;
-    }
+    /* Footer */
 
     footer {
         padding-bottom: 16px;
     }
 }
 
-@media (min-width: 1024px) and (orientation: landscape) {
-}
+@media (min-width: 1024px) and (orientation: landscape) {}
 
 @media (min-width: 1920px) {
     body {
         font-size: 24px;
+    }
+
+    nav {
+        height: 80px;
+    }
+
+    .title {
+        width: 800px;
     }
 
     .title h1 {
@@ -760,42 +808,37 @@ footer h4 {
     .cv img {
         width: 60%;
     }
-
-
 }
-
-@media (min-width: 1280px) and (orientation: landscape) {}
-
 
 /* Keyframes */
 
 @-webkit-keyframes arrow-move {
     0% {
-        -webkit-transform: translateY(80px);
-                transform: translateY(80px)
+        -webkit-transform: translateY(50px);
+                transform: translateY(50px)
     }
     50% {
         -webkit-transform: translateY(0px);
                 transform: translateY(0px)
     }
     100% {
-        -webkit-transform: translateY(-80px);
-                transform: translateY(-80px)
+        -webkit-transform: translateY(-50px);
+                transform: translateY(-50px)
     }
 }
 
 @keyframes arrow-move {
     0% {
-        -webkit-transform: translateY(80px);
-                transform: translateY(80px)
+        -webkit-transform: translateY(50px);
+                transform: translateY(50px)
     }
     50% {
         -webkit-transform: translateY(0px);
                 transform: translateY(0px)
     }
     100% {
-        -webkit-transform: translateY(-80px);
-                transform: translateY(-80px)
+        -webkit-transform: translateY(-50px);
+                transform: translateY(-50px)
     }
 }
 
