@@ -49,11 +49,11 @@ nav {
 nav h1 {
     margin: 8px 0px;
     font-family: 'Archivo Black', sans-serif;
-    font-size: 2rem;
+    font-size: 1.1rem;
     text-transform: uppercase;
     color: #313b72;
-    padding: 8px 0 0 24px;
-    
+    padding: 16px 0 0 24px;
+    visibility: hidden;
 }
 
 /* Hamburger */
@@ -324,6 +324,7 @@ nav h1 {
 
 .type p {
     margin: 8px 0 0 0;
+    color: #313b72;
 }
 
 .fa-html5 {
@@ -393,6 +394,7 @@ hr {
 .project p {
     margin: 0;
     padding-top: 16px;
+    color: #313b72;
 }
 
 /* CV */
@@ -401,7 +403,7 @@ hr {
     position: relative;
     display: flex;
     width: 100%;
-    height: 100vh;
+    height: auto;
     flex-direction: column;
     align-items: center;
     text-align: center;   
@@ -436,21 +438,11 @@ hr {
     color: #313b72;
 }
 
-/* Image */
-
-
-.bottom-img {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-}
-
 /* Contact */
 
 .contact {
     width: 100%;
+    height: 100vh;
     position: relative;
     background-color: #ffffff;
     text-align: center;
@@ -475,6 +467,7 @@ form textarea {
     border: none;
     border-bottom: 1px solid #95a3b3;
     padding: 4px 0;
+    outline: none;
 }
 
 .sendMessage {
@@ -487,6 +480,29 @@ form textarea {
     transition: .2s;
 }
 
+.mail {
+    padding: 32px 0;
+}
+
+.contact i {
+    color: #38d4e5;
+}
+
+.contact p {
+    color: #313b72;
+    font-size: 1.2rem;
+}
+
+/* Image */
+
+
+.bottom-img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
 
 /* Footer */
 
@@ -543,6 +559,10 @@ footer h4 {
     }
 
     .hamburger {
+        display: none;
+    }
+
+    nav h1 {
         display: none;
     }
 
@@ -643,7 +663,13 @@ footer h4 {
     }
 }
 
-@media (min-width: 768px) and (orientation: landscape) {}
+@media (min-width: 768px) and (orientation: landscape) {
+
+    .cv img {
+        width: 30%;
+    }
+    
+}
 
 @media (min-width: 992px) {}
 
@@ -661,6 +687,10 @@ footer h4 {
     .header-top,
     .main-top {
         visibility: hidden;
+    }
+
+    nav h1 {
+        display: inherit;
     }
 
     .hamburger {
@@ -737,6 +767,7 @@ footer h4 {
     /* About */
 
     .about {
+        min-height: 50vh;
         padding-top: 64px;
     }
 
@@ -799,7 +830,6 @@ footer h4 {
     /* Portfolio */
 
     .all-projects {
-        display: flex;
         flex-direction: initial;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -820,6 +850,12 @@ footer h4 {
         width: 40%;
     }
 
+    /* Contact */
+
+    .contact {
+        height: auto;
+    }
+
     /* Image */
 
     .bottom-img {
@@ -833,7 +869,16 @@ footer h4 {
     }
 }
 
-@media (min-width: 1024px) and (orientation: landscape) {}
+@media (min-width: 1024px) and (orientation: portrait) {
+    
+    .title {
+        top: 15%;
+    }
+    
+    .header-img {
+        height: calc(var(--vh, 1vh) * 75);
+    }
+}
 
 @media (min-width: 1920px) {
     body {
