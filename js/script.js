@@ -55,11 +55,13 @@ $(document).scroll(function() {
     if (y >= h) {
         $("#header").css("visibility", "hidden"),
         $(".hamburger span").css("background-color", "#ffffff"),
-        $("nav").css("background-color", "#95a3b3");
+        $("nav").css("background-color", "#95a3b3"),
+        $("nav h1").css("visibility", "visible");
     } else {
         $("#header").css("visibility", "visible"),
         $(".hamburger span").css("background-color", "#95a3b3"),
-        $("nav").css("background-color", "initial");
+        $("nav").css("background-color", "initial"),
+        $("nav h1").css("visibility", "hidden");
     };
 
 });

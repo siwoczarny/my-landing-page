@@ -21,6 +21,7 @@
     <body>
         <!-- Navbar -->
         <nav>
+            <h1>Maciej Chrustowski</h1>
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -30,7 +31,7 @@
                     <ul>
                         <li><a href="#about">O mnie</a></li>
                         <li><a href="#technology">Technologie</a></li>
-                        <li><a href="#my-works">Projekty</a></li>
+                        <li><a href="#portfolio">Projekty</a></li>
                         <li><a href="#cv">CV</a></li>
                         <li><a href="#contact">Kontakt</a></li>
                     </ul>
@@ -102,7 +103,7 @@
             </section>
             
             <!-- Moje projekty -->
-            <section id="my-works" class="my-works">
+            <section id="portfolio" class="portfolio">
                 <h2>Projekty</h2>
                 <div class="all-projects">
                     <div class="project">
@@ -140,12 +141,37 @@
                         class="downloadCV">Pobierz CV</a>
                 </div>
             </section>
+
+            <!-- Contact -->
+            <section id="contact" class="contact">
+                <h2>Napisz do mnie</h2>
+                <form name="contact-me" action="">
+                    <div>
+                        <!-- <label for="name">Imię i nazwisko:</label> -->
+                        <input type="text" id="name" placeholder="Imię i nazwisko">
+                    </div>
+                    <div>
+                        <!-- <label for="mail">E-mail:</label> -->
+                        <input type="text" id="mail" placeholder="E-mail">
+                    </div>
+                    <div>
+                        <!-- <label for="subject">Temat</label> -->
+                        <input type="text" id="subject" placeholder="Temat">
+                    </div>
+                    <div>
+                        <!-- <label for="message">Treść wiadomości</label> -->
+                        <textarea rows="10 "type="text" id="message" placeholder="Treść wiadomości"></textarea>
+                    </div>
+                    <button class="sendMessage" >Wyślij</button>
+                </form>
+            </section>
+
         </main>
         
             <!-- Footer -->
         <footer>
             <img class="bottom-img" src="./img/me-header.jpg" alt="">
-            <div id="contact" class="contact">
+            <div id="footer-box" class="footer-box">
                 <a href="https://github.com/siwoczarny" target="_blank"><i class="fab fa-github fa-3x"></i></a>
                 <a href="https://www.linkedin.com/in/maciej-chrustowski-a50351178/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
             </div>

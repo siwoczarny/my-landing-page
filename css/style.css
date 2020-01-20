@@ -46,6 +46,16 @@ nav {
     transition: all .1s;
 }
 
+nav h1 {
+    margin: 8px 0px;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #313b72;
+    padding: 8px 0 0 24px;
+    
+}
+
 /* Hamburger */
 
 .hamburger {
@@ -114,7 +124,7 @@ nav {
 
 .nav-menu {
     position: fixed;
-    width: 90%;
+    width: 75%;
     text-align: center;
     background-color: #95a3b3;
     visibility: hidden;
@@ -346,9 +356,9 @@ hr {
     margin-top: 62px;
 }
 
-/* My works */
+/* Portfolio */
 
-.my-works {
+.portfolio {
     width: 100%;
     height: auto;
     text-align: center;
@@ -357,7 +367,7 @@ hr {
     background-color: #ffffff;
 }
 
-.my-works h2 {
+.portfolio h2 {
     margin: 0;
     padding: 16px;
     text-transform: uppercase;
@@ -437,6 +447,47 @@ hr {
     background-color: #ffffff;
 }
 
+/* Contact */
+
+.contact {
+    width: 100%;
+    position: relative;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 64px 0 64px 0;
+}
+
+.contact h2 {
+    margin: 0;
+    padding: 16px;
+    text-transform: uppercase;
+    color: #f28b24;
+}
+
+form {
+    padding: 32px 0;
+}
+
+form input,
+form textarea {
+    width: 80vw;
+    margin-bottom: 16px;
+    border: none;
+    border-bottom: 1px solid #95a3b3;
+    padding: 4px 0;
+}
+
+.sendMessage {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #ffffff;
+    background-color: #95a3b3;
+    padding: 8px;
+    transition: .2s;
+}
+
+
 /* Footer */
 
 footer {
@@ -448,11 +499,11 @@ footer {
     padding-bottom: 24px;
 }
 
-.contact {
+.footer-box {
     padding-bottom: 16px;
 }
 
-.contact i {
+.footer-box i {
     color: #ffffff;
     padding: 24px 8px 0 8px;
 }
@@ -579,7 +630,7 @@ footer h4 {
         display: none;
     }
 
-    /* My works */
+    /* Portfolio */
     
     .project p {
         font-size: 1.2rem;
@@ -671,7 +722,7 @@ footer h4 {
     }
 
     #arrow {
-        left: 25%;
+        left: 280px;
     }
 
     .header-img {
@@ -737,15 +788,15 @@ footer h4 {
         padding: 32px;
     }
 
-    .my-works h2 {
+    .portfolio h2 {
         font-size: 2rem;
     }
 
-    .my-works h4 {
+    .portfolio h4 {
         font-size: 1.2rem;
     }
 
-    /* My works */
+    /* Portfolio */
 
     .all-projects {
         display: flex;
@@ -793,6 +844,10 @@ footer h4 {
         height: 80px;
     }
 
+    nav h1 {
+        font-size: 3rem;
+    }
+
     .title {
         width: 800px;
     }
@@ -803,6 +858,10 @@ footer h4 {
 
     .title h4 {
         font-size: 1.5rem;
+    }
+
+    #arrow {
+        left: 480px;
     }
 
     .cv img {
