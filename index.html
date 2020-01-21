@@ -30,8 +30,8 @@
             <div id="nav-menu" class="nav-menu">
                     <ul>
                         <li><a href="#about">O mnie</a></li>
-                        <li><a href="#technology">Technologie</a></li>
-                        <li><a href="#portfolio">Projekty</a></li>
+                        <li><a href="#skills">Umiejętności</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#cv">CV</a></li>
                         <li><a href="#contact">Kontakt</a></li>
                     </ul>
@@ -74,10 +74,10 @@
                 </div>
             </section>
             <!-- Technologie -->
-            <section id="technology" class="technology">
-                <h2>Technologie</h2>
+            <section id="skills" class="skills">
+                <h2>Umiejętności</h2>
                 <h4>Poniżej zamieściłem kilka technologii i narzędzi, z których korzystam i których się uczę.</h4>
-                <div class="skills">
+                <div class="tools">
                     <div class="type">
                         <i class="fab fa-html5 fa-3x"></i>
                         <p>HTML5</p>
@@ -98,33 +98,50 @@
                         <i class="fab fa-react fa-3x"></i>
                         <p>React</p> 
                     </div>
+                    <div class="skills">
+                        <div class="type">
+                            <i class="fab fa-git-alt fa-3x"></i>
+                            <p>Git</p>
+                        </div>
+                        <div class="type">
+                            <i class="fab fa-npm fa-3x"></i>
+                            <p>npm</p>
+                        </div>
+                        <div class="type">
+                            <i class="fab fa-slack fa-3x"></i>
+                            <p>Slack</p>
+                        </div>
                 </div>
                 <hr>
             </section>
             
             <!-- Moje projekty -->
             <section id="portfolio" class="portfolio">
-                <h2>Projekty</h2>
+                <h2>Portfolio</h2>
                 <div class="all-projects">
                     <div class="project">
+                        <a href="https://siwoczarny.github.io/my-landing-page/" target="_blank"><img src="./img/portfolio.jpg" alt="rzut projektu"></a>
+                        <p>Strona Portfolio</p>
+                    </div>
+                    <div class="project">
                         <a href="https://siwoczarny.github.io/pogodaJS/" target="_blank"><img src="./img/pogodaJS.jpg" alt="rzut projektu"></a>
-                        <p>Pogoda Javascript</p>
+                        <p>Strona Pogoda</p>
                     </div>
                     <div class="project">
                         <a href="https://siwoczarny.github.io/pogoda-react/" target="_blank"><img src="./img/pogodaReact.jpg" alt="rzut projektu"></a>
-                        <p>Pogoda React</p>
+                        <p>Aplikacja Pogoda</p>
                     </div>
                     <div class="project">
                         <a href="#"><img src="./img/in-progress.jpeg" alt="rzut projektu"></a>
-                        <p>W trakcie realizacji</p>
+                        <p>Aplikacja Lista Do Zrobienia<br>/w trakcie realizacji/</p>
                     </div>
                     <div class="project">
                         <a href="#"><img src="./img/in-progress.jpeg" alt="rzut projektu"></a>
-                        <p>W trakcie realizacji</p>
+                        <p>Aplikacja Panel Zadań<br>/w trakcie realizacji/</p>
                     </div>
                     <div class="project">
                         <a href="#"><img src="./img/in-progress.jpeg" alt="rzut projektu"></a>
-                        <p>W trakcie realizacji</p>
+                        <p>Aplikacja filmowa<br>/w trakcie realizacji/</p>
                     </div>
                 </div>
                 <hr>
@@ -140,34 +157,38 @@
                     <a href="./files/MACIEJ CHRUSTOWSKI CV 2020 .pdf" title="download-CV" download
                         class="downloadCV">Pobierz CV</a>
                 </div>
+                <hr>
             </section>
 
             <!-- Contact -->
             <section id="contact" class="contact">
-                <h2>Napisz do mnie</h2>
-                <form name="contact-me" action="">
+                <h2>Kontakt</h2>
+                <div class="contact-social" >
+                    <a href="mailto: chrustowski.maciej@gmail.com"><i class="fas fa-envelope fa-3x"></i><br>chrustowski.maciej@gmail.com</a>
+                </div>
+                <div class="contact-social">
+                    <a href="https://www.linkedin.com/in/maciej-chrustowski"><i class="fab fa-linkedin fa-3x"></i><br>linkedin.com/in/maciej-chrustowski</a>
+                </div>
+                <div class="contact-social">
+                    <a href="https://github.com/siwoczarny"><i
+                            class="fab fa-github fa-3x"></i><br>github.com/siwoczarny</a>
+                </div>
+                <!-- <form name="contact-me" id="contactForm" method="post" action="/send.scripts.php">
                     <div>
-                        <!-- <label for="name">Imię i nazwisko:</label> -->
-                        <input type="text" id="name" placeholder="Imię i nazwisko">
+                        <input type="text" name="name" required id="name" data-error="Wypełnij to pole" pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+" placeholder="Imię i nazwisko">
                     </div>
                     <div>
-                        <!-- <label for="mail">E-mail:</label> -->
-                        <input type="text" id="mail" placeholder="E-mail">
+                        <input type="text" name="mail" required id="mail" data-error="Wpisz poprawny mail" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" placeholder="E-mail">
                     </div>
                     <div>
-                        <!-- <label for="subject">Temat</label> -->
                         <input type="text" id="subject" placeholder="Temat">
                     </div>
                     <div>
-                        <!-- <label for="message">Treść wiadomości</label> -->
                         <textarea rows="10 "type="text" id="message" placeholder="Treść wiadomości"></textarea>
                     </div>
                     <button type="submit" class="sendMessage" >Wyślij</button>
-                </form>
-                <div class="mail" >
-                    <i class="fas fa-at fa-2x"></i>
-                    <p>chrustowski.maciej@gmail.com</p>
-                </div>
+                </form> -->
+                
             </section>
 
         </main>
@@ -176,8 +197,8 @@
         <footer>
             <img class="bottom-img" src="./img/me-header.jpg" alt="">
             <div id="footer-box" class="footer-box">
-                <a href="https://github.com/siwoczarny" target="_blank"><i class="fab fa-github fa-3x"></i></a>
-                <a href="https://www.linkedin.com/in/maciej-chrustowski-a50351178/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+                <a href="https://github.com/siwoczarny" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/maciej-chrustowski" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
             </div>
             <h4>© Maciej Chrustowski 2020 | Wszelkie prawa zastrzeżone.</h4>
         </footer>

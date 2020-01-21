@@ -289,9 +289,9 @@ nav h1 {
     color: #ffffff;
 }
 
-/* Technology */
+/* Skills */
 
-.technology {
+.skills {
     width: 100%;
     height: auto;
     padding: 64px 0 16px 0;
@@ -300,26 +300,26 @@ nav h1 {
     text-align: center;
 }
 
-.technology h2 {
+.skills h2 {
     margin: 0;
     padding: 16px;
     text-transform: uppercase;
     color: #f28b24;
 }
 
-.technology h4 {
+.skills h4 {
     padding: 0 40px;
     color: #313b72;
     font-weight: normal;
 }
 
-.skills {
+.tools {
     padding: 0 24px;
 }
 
 .type {
     display: inline-block;
-    padding: 16px;
+    padding: 24px;
 }
 
 .type p {
@@ -349,6 +349,18 @@ nav h1 {
 
 .fa-node {
     color: #303030;
+}
+
+.fa-git-alt {
+    color: #F1502F;
+}
+
+.fa-npm {
+    color: #CC3534;
+}
+
+.fa-slack {
+    color: #4A154B;
 }
 
 hr {
@@ -480,17 +492,24 @@ form textarea {
     transition: .2s;
 }
 
-.mail {
+.contact-social {
     padding: 32px 0;
 }
 
-.contact i {
+.contact-social i {
+    color: #313b72;
+    padding-bottom: 16px;
+    transition: .2s;
+}
+
+.contact-social i:hover {
     color: #38d4e5;
 }
 
-.contact p {
+.contact-social a {
     color: #313b72;
     font-size: 1.2rem;
+    text-decoration: none;
 }
 
 /* Image */
@@ -691,6 +710,7 @@ footer h4 {
 
     nav h1 {
         display: inherit;
+        padding: 16px 0 0 80px;
     }
 
     .hamburger {
@@ -767,7 +787,7 @@ footer h4 {
     /* About */
 
     .about {
-        min-height: 50vh;
+        min-height: 75vh;
         padding-top: 64px;
     }
 
@@ -800,17 +820,17 @@ footer h4 {
         display: none;
     }
 
-    /* Technology */
+    /* skills */
 
-    .technology h2 {
+    .skills h2 {
         font-size: 2rem;
     }
 
-    .technology h4 {
+    .skills h4 {
         font-size: 1.2rem;
     }
 
-    .skills {
+    .tools {
         padding: 32px 0 64px 0;
     }
 
@@ -853,7 +873,7 @@ footer h4 {
     /* Contact */
 
     .contact {
-        height: auto;
+        min-height: auto;
     }
 
     /* Image */
