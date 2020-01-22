@@ -213,6 +213,7 @@ nav h1 {
     transform: translateX(-50%);
     overflow: hidden;
     cursor: pointer;
+    z-index: 1;
 }
 
 .fa-chevron-up {
