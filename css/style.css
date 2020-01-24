@@ -72,7 +72,8 @@ nav h1 {
 }
 
 .hamburger.active {
-    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
 }
 
 .hamburger span {
@@ -130,7 +131,9 @@ nav h1 {
     visibility: hidden;
     top: -100%;
     right: 50%;
-    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+    -webkit-transition: 1s;
     transition: 1s;
 }
 
@@ -158,6 +161,7 @@ nav h1 {
     line-height: 2em;
     text-transform: uppercase;
     text-decoration: none;
+    -webkit-transition: all .2s;
     transition: all .2s;
 }
 
@@ -175,7 +179,8 @@ nav h1 {
     text-align: center;
     text-transform: uppercase;
     z-index: 1;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
 }
 
 .title h1 {
@@ -210,7 +215,8 @@ nav h1 {
     text-align: center;
     bottom: 10%;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     overflow: hidden;
     cursor: pointer;
     z-index: 1;
@@ -389,9 +395,13 @@ hr {
 }
 
 .all-projects {
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
 }
 
 .project {
@@ -401,7 +411,8 @@ hr {
 
 .project img {
     width: 80%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .project p {
@@ -414,11 +425,15 @@ hr {
 
 .cv {
     position: relative;
+    display: -webkit-box;
     display: flex;
     width: 100%;
     height: auto;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
     text-align: center;   
     background-color: #ffffff;
     padding: 64px 0 64px 0;
@@ -444,6 +459,7 @@ hr {
     color: #ffffff;
     background-color: #95a3b3;
     padding: 8px;
+    -webkit-transition: .2s;
     transition: .2s;
 }
 
@@ -490,6 +506,7 @@ form textarea {
     color: #ffffff;
     background-color: #95a3b3;
     padding: 8px;
+    -webkit-transition: .2s;
     transition: .2s;
 }
 
@@ -500,6 +517,7 @@ form textarea {
 .contact-social i {
     color: #313b72;
     padding-bottom: 16px;
+    -webkit-transition: .2s;
     transition: .2s;
 }
 
@@ -551,18 +569,6 @@ footer h4 {
 }
 
 /* Media */
-
-@media (min-width: 320px) {}
-
-@media (min-width: 320px) and (orientation: landscape) {}
-
-@media (min-width: 480px) {}
-
-@media (min-width: 480px) and (orientation: landscape) {}
-
-@media (min-width: 576px) {}
-
-@media (min-width: 576px) and (orientation: landscape) {}
 
 @media (min-width: 768px) and (orientation: portrait) {
 
@@ -691,10 +697,6 @@ footer h4 {
     
 }
 
-@media (min-width: 992px) {}
-
-@media (min-width: 992px) and (orientation: landscape) {}
-
 @media (min-width: 1024px) {
 
     /* Header */
@@ -725,7 +727,8 @@ footer h4 {
         visibility: visible;
         top: 16px;
         right: 80px;
-        transform: none;
+        -webkit-transform: none;
+                transform: none;
     }
 
     .nav-menu.active {
@@ -760,7 +763,8 @@ footer h4 {
         left: 80px;
         width: 400px;
         text-align: center;
-        transform: none;
+        -webkit-transform: none;
+                transform: none;
 
     }
 
@@ -851,7 +855,9 @@ footer h4 {
     /* Portfolio */
 
     .all-projects {
-        flex-direction: initial;
+        -webkit-box-orient: initial;
+        -webkit-box-direction: initial;
+                flex-direction: initial;
         flex-wrap: wrap;
         justify-content: space-around;
         padding-top: 32px;
