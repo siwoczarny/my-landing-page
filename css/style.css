@@ -314,7 +314,7 @@ nav h1 {
     color: #f28b24;
 }
 
-.skills h4 {
+.skills-text {
     padding: 0 40px;
     color: #313b72;
     font-weight: normal;
@@ -342,6 +342,10 @@ nav h1 {
     color:#2965f1;
 }
 
+.fa-sass {
+    color: #cc6699;
+}
+
 .fa-bootstrap {
     color: #602C50;
 }
@@ -355,7 +359,7 @@ nav h1 {
 }
 
 .fa-node {
-    color: #303030;
+    color: #3C873A;
 }
 
 .fa-git-alt {
@@ -394,6 +398,12 @@ hr {
     color: #f28b24;
 }
 
+.portfolio-text {
+    padding: 0 40px;
+    color: #313b72;
+    font-weight: normal;
+}
+
 .all-projects {
     display: -webkit-box;
     display: flex;
@@ -415,7 +425,7 @@ hr {
        object-fit: cover;
 }
 
-.project p {
+.project figcaption {
     margin: 0;
     padding-top: 16px;
     color: #313b72;
@@ -678,7 +688,7 @@ footer h4 {
 
     /* Portfolio */
     
-    .project p {
+    .project figcaption {
         font-size: 1.2rem;
     }
 
@@ -792,7 +802,6 @@ footer h4 {
     /* About */
 
     .about {
-        min-height: 75vh;
         padding-top: 64px;
     }
 
@@ -831,7 +840,7 @@ footer h4 {
         font-size: 2rem;
     }
 
-    .skills h4 {
+    .skills-text {
         font-size: 1.2rem;
     }
 
@@ -843,16 +852,15 @@ footer h4 {
         font-size: 1.5rem;
         padding: 32px;
     }
-
+    
+    /* Portfolio */
     .portfolio h2 {
         font-size: 2rem;
     }
 
-    .portfolio h4 {
+    .portfolio-text {
         font-size: 1.2rem;
     }
-
-    /* Portfolio */
 
     .all-projects {
         -webkit-box-orient: initial;
@@ -867,7 +875,7 @@ footer h4 {
         width: 40%;
     }
 
-    .project p {
+    .project figcaption {
         font-size: 1.2rem;
     }
 
@@ -934,6 +942,10 @@ footer h4 {
 
     #arrow {
         left: 480px;
+    }
+
+    .about {
+        min-height: 60vh;
     }
 
     .cv img {
