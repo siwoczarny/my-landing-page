@@ -125,8 +125,8 @@ nav h1 {
 
 .nav-menu {
     position: fixed;
-    width: 75%;
-    text-align: center;
+    width: 100%;
+    text-align: right;
     background-color: #95a3b3;
     visibility: hidden;
     top: -100%;
@@ -139,7 +139,7 @@ nav h1 {
 
 .nav-menu.active {
     visibility: visible;
-    top: 80px;
+    top: 62px;
 }
 
 .nav-menu ul {
@@ -150,6 +150,7 @@ nav h1 {
 
 .nav-menu li {
     border-bottom: 1px solid #ffffff;
+    padding: 8px 24px;
 }
 
 .nav-menu li:first-child {
